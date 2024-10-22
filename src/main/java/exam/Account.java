@@ -7,7 +7,7 @@ public abstract class Account {
 
     public Account() {
         counter++;
-        this.ACCOUNT_NUMBER = counter ;
+        this.ACCOUNT_NUMBER = counter;
 
     }
 
@@ -30,8 +30,9 @@ public abstract class Account {
 
 
     public void withdraw(double amount){
-        if(amount < balance){
-            double x = getTransactionFee(getAccountType());
+        double x = getTransactionFee(getAccountType());
+        if(amount + x < balance){
+
             this.balance = balance - amount;
 
             balance -= x;
@@ -77,8 +78,6 @@ public abstract class Account {
 
             return 5.0;
         }
-
-
 
     }
     public String printAccountInfo(){

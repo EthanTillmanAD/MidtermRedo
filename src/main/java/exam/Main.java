@@ -12,13 +12,9 @@ public class Main {
         wellsFargo.addCustomer(customer1);
 
         customer1.getACCOUNT().deposit(2000);
-
         customer1.getACCOUNT().withdraw(100);
-
         customer1.getACCOUNT().withdraw(50);
-
         customer1.getACCOUNT().deposit(60);
-
         customer1.getACCOUNT().deposit(-500);
 
         Savings savings = new Savings();
@@ -28,7 +24,6 @@ public class Main {
         wellsFargo.addCustomer(customer2);
 
         customer2.getACCOUNT().deposit(500);
-
         customer2.getACCOUNT().withdraw(1000000);
         customer2.getACCOUNT().withdraw(100);
 
